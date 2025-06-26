@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Siya Rathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #fff0f5);
+      color: #4b2c4d;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #b5179e;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #ffc8dd;
+    }
+
+    .project-card h2 {
+      color: #d63384;
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .tech-used {
+      margin: 10px 0;
+      padding-left: 20px;
+      color: #5e2a52;
+    }
+
+    .tech-used li {
+      margin-bottom: 5px;
+      list-style-type: disc;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .project-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Projects</h1>
+
+  <div class="projects-container">
+
+    <!-- Railway Deadlock Simulation -->
+    <div class="project-card">
+      <h2>Railway Deadlock Simulation</h2>
+      <p>This project simulates deadlock situations in railway track systems using concepts from operating systems. It uses resource allocation and detection logic to visualize and manage train movement conflicts.</p>
+      <p><strong>Technologies Used:</strong></p>
+      <ul class="tech-used">
+        <li><strong>HTML</strong> – For webpage structure</li>
+        <li><strong>CSS</strong> – For styling the layout and interface</li>
+        <li><strong>C Programming</strong> – For simulating the deadlock logic</li>
+        <li><strong>Python CGI</strong> – For backend integration and server-side scripting</li>
+      </ul>
+      <img src="railway-deadlock-output.jpg" alt="Railway Deadlock Simulation Output">
+    </div>
+
+    <!-- Fake News Detection using ML -->
+    <div class="project-card">
+      <h2>Fake News Detection (Machine Learning)</h2>
+      <p>A machine learning project that classifies whether a news article is real or fake using natural language processing (NLP) techniques and classifiers like Logistic Regression and Random Forest.</p>
+      <img src="fake-news-detection-output.jpg" alt="Fake News Detection ML Output">
+    </div>
+
+    <!-- Autism Support Game in Python -->
+    <div class="project-card">
+      <h2>Python Game for Autism Spectrum Disorder</h2>
+      <p>This interactive game was developed in Python to support individuals with Autism Spectrum Disorder by improving social interaction, motor skills, and cognitive response through visually engaging activities.</p>
+      <img src="autism-game-output.jpg" alt="Game for Autism Output">
+    </div>
+
+  </div>
+
+</body>
+</html>

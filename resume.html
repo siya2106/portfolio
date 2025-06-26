@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Siya Rathi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe0ec, #fff0f5);
+      color: #4b2c4d;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .btn-download, .btn-back {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(90deg, #ff80ab, #ffb6c1);
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn-download:hover, .btn-back:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #ffb6c1, #ff80ab);
+    }
+
+    .pdf-preview {
+      width: 90%;
+      max-width: 800px;
+      height: 600px;
+      border: 2px solid #ffb6c1;
+      border-radius: 10px;
+      margin: 30px auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .pdf-preview {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Resume</h1>
+
+  <!-- Download & Back Buttons -->
+  <a href="resume.pdf" download class="btn-download">Download PDF Resume</a>
+  <a href="index.html" class="btn-back">← Back to Home</a>
+
+  <!-- PDF Preview -->
+  <div class="pdf-preview">
+    <iframe src="resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+  </div>
+
+</body>
+</html>
